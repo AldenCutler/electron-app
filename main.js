@@ -3,13 +3,17 @@ const path = require('path')
 
 const createWindow = () => {
     const win = new BrowserWindow({
-        width: 800,
-        height: 600,
+        width: 500,
+        height: 200,
+        minWidth: 500,
+        minHeight: 200,
         webPreferences: {
             preload: path.join(__dirname, 'preload.js'),
         },
     })
     ipcMain.handle('ping', () => 'pong')
+    win.setAspectRatio(2.5)
+    win.setMenu(null)
     win.loadFile('index.html')
 }
 

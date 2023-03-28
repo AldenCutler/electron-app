@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="styles.css">
 <html>
     <head>
         <meta charset="""UTF-8"/>
+        
         <meta
             http-equiv="Content-Security-Policy"
             content="default-src 'self'; script-src 'self'"
@@ -10,14 +12,22 @@
             http-equiv="X-Content-Security-Policy"
             content="default-src 'self'; script-src 'self'"
         />
-        <title>Hello From Electron renderer!</title>
+        <title>Clock</title>
     </head>
-
+    
     <body>
-        <h1>Hello from electron renderer!</h1>
-        <p>wave</p>
-        <p id="info"></p>
+        <div class="selector">
+            <button id="theme">Change Theme</button>
+        </div>
+        <div class="container" id="clock">
+            <div class="clock-num" id="hour"></div>
+            <div class="separator">:</div>
+            <div class="clock-num" id="minute"></div>
+            <div class="separator">:</div>
+            <div class="clock-num" id="second"></div>
+        </div>
     </body>
     
     <script src="./renderer.js"></script>
+    <script src="index.js"></script>
 </html>

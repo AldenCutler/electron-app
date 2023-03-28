@@ -6,3 +6,4 @@ contextBridge.exposeInMainWorld('versions', {
     electron: () => process.versions.electron,
     ping: () => ipcRenderer.invoke('ping')
 })
+
