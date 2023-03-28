@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+    font-family: 'Bahnschrift', sans-serif;
+    background-color: #d19e9e;
+}
+
+.container {
+    display: flex;
+}
+
+.dark {
+    background-color: #180a0a;
+    color:#552323;
+}
+
+.clock-num {
+    display: flex;
+    font-size: 10vw;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bahnschrift', sans-serif;
+    color: #720909;
+    width: 25vw;
+    height: 20vw;
+    margin: 2vw;
+}
+
+.separator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10vw;
+    color: #720909;
+    width: 2vw;
+    height: 20vw;
+    margin: 2vw;
+}
+
+.selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    align-self: center;
+    font-size: 1.5vw;
+    border-radius: 5px;
+    border-color:#381818;
+
+}
+
+.selector-dark {
+    background-color: #180a0a;
+    color: #552323;
+    border-radius: 15%;
+    border-color:#381818;
+}
+
+/*center the theme selector*/
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    font-size:3vw;
+    align-self: center;
+    border-radius: 15%;
+    border-color:#381818;
+    color: #720909;
+    background-color: #d19e9e;
+}
